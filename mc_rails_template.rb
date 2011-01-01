@@ -2,7 +2,7 @@
 # => rails new app_name -J -T -m template_name.rb
 
 # Insert some default gems into the Gemfile.
-gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+gem "rspec-rails", ">= 2.1.0", :group => [:development, :test]
 gem "annotate-models", '1.0.4'
 #gem "factory_girl_rails", ">= 1.0.0", :group => :test
 #gem "factory_girl_generator", ">= 0.0.1", :group => [:development, :test]
