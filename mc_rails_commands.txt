@@ -1,0 +1,22 @@
+Some useful everyday rails commands
+
+New App
+> rails new app_name -J -T -m template_name.rb
+> cd app_name
+> bundle install          # Install gems in Gemfile
+> rails g rspec:install   # Create spec/ dir & .rspec file
+> rake db:create:all      # Create dev/prod/test dbs
+
+RSpec
+> rake spec
+> rspec spec/
+
+Generators
+> rails g scaffold ModelName name:string email:string
+> rails g model ModelName name:string email:string
+> rails g controller ModelName method1 method2 ...
+> rails g migration add_fieldname_to_tablename fieldname:integer 
+
+Other
+> rake db:seed            # Load seeds in db/seeds.rb
+
