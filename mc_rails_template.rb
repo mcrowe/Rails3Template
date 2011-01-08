@@ -23,7 +23,7 @@ get "http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js",  "public/
 run "curl -L http://github.com/rails/jquery-ujs/raw/master/src/rails.js > public/javascripts/rails.js"
 
 # Include JQuery and UJS adapter in javascript ":defaults"
-gsub_file 'config/application.rb', 'config.action_view.javascript_expansions[:defaults] = %w()', 'config.action_view.javascript_expansions[:defaults] = %w(jquery.js jquery-ui.js rails.js)'
+gsub_file 'config/application.rb', 'config.action_view.javascript_expansions[:defaults] = %w()', 'config.action_view.javascript_expansions[:defaults] = %w(jquery.js rails.js)'
 
 # Setup Git and Initialize a repository.
 create_file "log/.gitkeep"
